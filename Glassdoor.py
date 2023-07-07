@@ -42,6 +42,7 @@ for listing in job_listings:
     company = listing.find("div", class_="job-search-8wag7x").get_text().strip()
     location = listing.find("div", class_="location mt-xxsm").get_text().strip()
 
+
     if "Espoo" in location:
     # Create a dictionary for the job data
         job_data = {
